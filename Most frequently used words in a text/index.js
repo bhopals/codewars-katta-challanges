@@ -1,3 +1,8 @@
+
+
+// Kata Problem - https://www.codewars.com/kata/51e056fe544cf36c410000fb/train/javascript
+// Kata Alternative Solutions - https://www.codewars.com/kata/51e056fe544cf36c410000fb/solutions/javascript
+
 // Instructions
 
 // Assumptions:
@@ -78,3 +83,5 @@ describe("Tests", () => {
   on Sundays, made away with three-quarters of his income.`), ['a','of','on'])
   });
 });
+
+
