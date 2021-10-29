@@ -18,7 +18,8 @@ mergePayload (source, target) {
             if (Array.isArray(targetValue) && Array.isArray(sourceValue)) {
                 target[key] = targetValue.concat(sourceValue);
             } else if (isObject(targetValue) && isObject(sourceValue)) {
-                target[key] = this.mergePayload(Object.assign({
+                 // Recursive call to `mergePayload`
+                 target[key] = mergePayload(Object.assign({
                 }, sourceValue), targetValue);
             } else {
                 target[key] = sourceValue;
